@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>CFB 27 Dynasty Network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Playfair+Display:wght@700;900&family=Roboto+Slab:wght@400;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{--sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--cond:Oswald,"Arial Narrow","Helvetica Neue",Impact,sans-serif;
+--serif:"Source Serif 4",Georgia,"Times New Roman",serif;--display:"Playfair Display",Georgia,serif;--slab:"Roboto Slab",Rockwell,"Courier New",serif;--bebas:"Bebas Neue",Impact,"Arial Narrow",sans-serif;
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 6.5rem);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+img,svg{max-width:100%}
+.net{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bar);color:#f4f6fa;border-bottom:3px solid var(--gold)}
+.net-in{max-width:76rem;margin:0 auto;padding:.55rem 1rem 0}
+.brand{font-family:var(--cond);font-weight:700;font-size:1.3rem;line-height:1.1;margin:0 0 .15rem;letter-spacing:.01em}
+.brand small{font-family:var(--sans);font-weight:500;font-size:.8rem;color:#a6b4c9;margin-left:.6rem}
+.tabs{display:flex;gap:.1rem;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{white-space:nowrap;text-decoration:none;padding:.5rem .8rem .45rem;font-weight:600;font-size:.92rem;color:#c3cfe0;border-bottom:4px solid transparent}
+.tabs a:hover{color:#fff}
+.tabs a[aria-current="page"]{color:#fff;border-bottom-color:var(--tab,#e0b341)}
+.slate{background:var(--panel);border-bottom:1px solid var(--line)}
+.slate-in{max-width:76rem;margin:0 auto;padding:.55rem 1rem;display:flex;gap:.9rem;overflow-x:auto;align-items:stretch}
+.slate-h{flex:none;align-self:center;font-family:var(--cond);font-weight:700;font-size:1.1rem}
+.game{flex:none;min-width:14rem;border-left:5px solid var(--g);padding:.1rem .8rem;text-decoration:none}
+.game b{display:block;font-size:.93rem}
+.game span{display:block;font-size:.8rem;color:var(--muted)}
+.pp{max-width:76rem;margin:0 auto;padding:1.2rem 1rem 3rem}
+.hh,.lh{font-family:var(--cond);font-weight:700;font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.05;margin:.4rem 0 .5rem;letter-spacing:-.005em}
+.lead{max-width:44rem;font-size:1.08rem;color:var(--muted);margin:0 0 1.4rem}
+.muted{color:var(--muted)}
+.fronts{display:grid;grid-template-columns:repeat(auto-fit,minmax(18.5rem,1fr));gap:1.1rem;align-items:stretch}
+.front{background:var(--pap);color:var(--pi);border:1px solid var(--pl);display:flex;flex-direction:column}
+.fh{padding:1rem 1rem .9rem;background:var(--band);color:var(--bandink)}
+.fh-t{display:block}
+.fh-ulm{text-align:center;border-bottom:4px double var(--a2)}
+.fh-ulm .fh-t{font-family:var(--display);font-weight:900;font-size:1.55rem;letter-spacing:.04em}
+.fh-usf{border-bottom:6px solid var(--a2)}
+.fh-usf .fh-t{font-family:var(--cond);font-weight:700;font-size:1.9rem;text-transform:uppercase;letter-spacing:.02em}
+.fh-ksu{border-bottom:6px solid var(--a2)}
+.fh-ksu .fh-t{font-family:var(--bebas);font-size:2rem;letter-spacing:.04em}
+.fb{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.45rem;flex:1}
+.fb .who{margin:0;font-size:.86rem;color:var(--pm)}
+.fb h3{margin:.1rem 0 0;font-size:1.25rem;line-height:1.2}
+.fb h3 a{text-decoration:none}
+.fb h3 a:hover{text-decoration:underline}
+.fb p{margin:0}
+.t-ulm .fb h3{font-family:var(--display)}
+.t-usf .fb h3{font-family:var(--cond);font-size:1.45rem;font-weight:600}
+.t-ksu .fb h3{font-family:var(--slab);font-weight:700}
+.go{margin-top:auto;align-self:flex-start;text-decoration:none;font-weight:700;padding:.5rem .8rem;background:var(--band);color:var(--bandink);border-radius:.25rem}
+.go:hover{filter:brightness(1.12)}
+.friends-band{display:block;margin:1.2rem 0;padding:1rem 1.2rem;background:var(--panel);border:1px solid var(--line);border-left:8px solid var(--gold);text-decoration:none}
+.friends-band strong{display:block;font-family:var(--cond);font-size:1.4rem}
+.friends-band span{color:var(--muted)}
+.box{background:var(--panel);border:1px solid var(--line);padding:1rem 1.1rem;margin-bottom:1rem}
+.box h2{margin:0 0 .5rem;font-family:var(--cond);font-size:1.25rem}
+.box.wide p,.box.wide li{max-width:46rem}
+.latest,.cross{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.latest li{display:flex;flex-direction:column}
+.latest a{text-decoration:none}
+.latest a:hover{text-decoration:underline}
+.latest span{color:var(--muted);font-size:.9rem}
+.mast{background:var(--band);color:var(--bandink);padding:1.2rem 1rem 1.1rem}
+.mast h1{margin:0;line-height:1.02}
+.mast-tag{margin:.4rem 0 0;opacity:.9}
+.mast-ulm{text-align:center}
+.mast-ulm h1{font-family:var(--display);font-weight:900;font-size:clamp(2rem,7vw,4.2rem);letter-spacing:.05em}
+.mast-rule{height:0;margin:.55rem auto;max-width:74rem;border-top:3px double var(--a2)}
+.mast-usf{border-bottom:8px solid var(--a2)}
+.mast-in{max-width:74rem;margin:0 auto}
+.mast-usf h1{font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:clamp(2.1rem,7.5vw,4.4rem);letter-spacing:.01em}
+.lower{margin:.6rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.lower span{background:var(--a2);color:#0e1d17;font-family:var(--cond);font-weight:600;padding:.15rem .6rem;text-transform:uppercase}
+.mast-ksu{border-bottom:8px solid var(--a2);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 10px,transparent 10px 20px)}
+.mast-ksu h1{font-family:var(--bebas);font-weight:400;font-size:clamp(2.3rem,8vw,5rem);letter-spacing:.04em}
+.rec{margin:0 0 .6rem;color:var(--muted)}
+.toc ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1rem;padding:0}
+.toc a{display:inline-block;padding:.3rem .7rem;background:var(--chip);text-decoration:none;font-weight:600;font-size:.9rem;border-radius:.2rem}
+.toc a:hover{text-decoration:underline}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 21rem;gap:1.4rem;align-items:start}
+.story{background:var(--pap);color:var(--pi);border:1px solid var(--pl);padding:1.5rem 1.5rem 1.7rem;margin-bottom:1.3rem}
+.kicker{margin:0 0 .4rem;font-weight:700;color:var(--a);font-size:.95rem}
+.draft{margin-left:.6rem;padding:.05rem .45rem;background:var(--chip);color:var(--muted);font-weight:600;font-size:.78rem;border-radius:.2rem}
+.story h2{margin:0 0 .4rem;font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.12}
+.byline{margin:0 0 1.1rem;color:var(--pm);font-size:.9rem}
+.prose p{max-width:40rem;margin:0 0 1rem;font-size:1.05rem;line-height:1.7}
+.prose h3{max-width:40rem;margin:1.6rem 0 .5rem;font-size:1.25rem}
+.t-ulm .story{border-top:6px double var(--a2)}
+.t-ulm .story h2{font-family:var(--display);font-weight:900}
+.t-ulm .prose p{font-family:var(--serif)}
+.t-ulm .prose h3{font-family:var(--display);color:var(--a)}
+.t-usf .story{border-left:10px solid var(--band)}
+.t-usf .story h2{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.005em}
+.t-usf .prose h3{font-family:var(--cond);font-weight:600;display:inline-block;background:var(--band);color:var(--bandink);padding:.1rem .6rem;text-transform:uppercase;font-size:1.1rem}
+.t-ksu .story{border-top:8px solid var(--a2)}
+.t-ksu .story h2{font-family:var(--bebas);font-weight:400;letter-spacing:.03em;font-size:clamp(1.9rem,5vw,2.9rem)}
+.t-ksu .prose p{font-family:var(--slab);font-size:1rem}
+.t-ksu .prose h3{font-family:var(--slab);font-weight:700;border-bottom:3px solid var(--a2);display:inline-block}
+.feat{max-width:40rem;margin:1.2rem 0;padding:.8rem 1rem;border-left:6px solid var(--a2);background:var(--chip);color:var(--ink)}
+.feat strong{display:block;margin-bottom:.2rem;color:var(--a)}
+.feat p{margin:0 !important;font-size:1rem !important}
+.rail .box h2{font-size:1.15rem}
+.coach-name{margin:0;font-weight:700;font-size:1.05rem}
+.rail p{margin:.3rem 0}
+.watchl{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.watchl li{display:flex;flex-direction:column}
+.watchl span{color:var(--muted);font-size:.88rem}
+.tw{overflow-x:auto}
+.sched{width:100%;border-collapse:collapse;font-size:.9rem}
+.sched th{text-align:left;font-weight:600;color:var(--muted);border-bottom:1px solid var(--line);padding:.3rem .3rem}
+.sched td{padding:.5rem .3rem;border-bottom:1px solid var(--line);vertical-align:top}
+.sched .wk{width:2.4rem;font-weight:700}
+.sched .r{text-align:right;white-space:nowrap}
+.at{color:var(--muted)}
+.ven{display:block;color:var(--muted);font-size:.82rem}
+.tag{display:inline-block;margin-left:.3rem;padding:0 .4rem;font-size:.72rem;font-weight:700;background:var(--gold);color:#201700;border-radius:.2rem}
+.tag.soft{background:var(--chip);color:var(--muted);font-weight:600}
+.tag.friends{background:#1d6fe0;color:#fff}
+.rk{font-weight:700;color:var(--loss)}
+.res.none{color:var(--muted)}
+.res.win{color:var(--win);font-weight:700}
+.res.loss{color:var(--loss);font-weight:700}
+.vs{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1rem;margin:1rem 0}
+.side{background:var(--pap);color:var(--pi);border:1px solid var(--pl);border-top:8px solid var(--band);padding:1rem 1.2rem}
+.side h2{margin:0;font-family:var(--cond);font-size:1.5rem}
+.side blockquote{margin:.8rem 0 0;padding-left:.9rem;border-left:5px solid var(--a2);font-style:italic}
+.empty{color:var(--muted)}
+footer{max-width:76rem;margin:0 auto;padding:1rem 1rem 2rem;color:var(--muted);font-size:.85rem}
+@media (max-width:60rem){.cols{grid-template-columns:1fr}}
+@media (max-width:40rem){.story{padding:1.1rem 1rem 1.3rem}.pp{padding-top:.9rem}}
+
+.tabs a[data-nav="ulm"]{--tab:#c8962b}.game[data-k="ulm"]{--g:#c8962b}.tabs a[data-nav="usf"]{--tab:#3fbf8f}.game[data-k="usf"]{--g:#3fbf8f}.tabs a[data-nav="ksu"]{--tab:#f2b61e}.game[data-k="ksu"]{--g:#f2b61e}.tabs a[data-nav="home"]{--tab:#e0b341}.tabs a[data-nav="league"]{--tab:#5aa2ff}
+:root{--bg:#eceff3;--panel:#ffffff;--ink:#121a26;--muted:#566274;--line:#d3d9e2;--bar:#0b1220;--chip:#e6ebf2;--win:#17754a;--loss:#b3261e;--focus:#1d6fe0;--gold:#e0b341}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070b12;--panel:#0e1522;--ink:#e9eef6;--muted:#97a3b6;--line:#222d41;--bar:#04070c;--chip:#162033;--win:#4cc38a;--loss:#ff7b72;--focus:#7db4ff;--gold:#e0b341}}
+:root[data-theme="dark"]{--bg:#070b12;--panel:#0e1522;--ink:#e9eef6;--muted:#97a3b6;--line:#222d41;--bar:#04070c;--chip:#162033;--win:#4cc38a;--loss:#ff7b72;--focus:#7db4ff;--gold:#e0b341}
+.t-ulm{--band:#7a1e2c;--bandink:#fff2d6;--a:#7a1e2c;--a2:#c8962b;--pap:#fffdf7;--pi:#231b14;--pm:#6c5e50;--pl:#e4d8c2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t-ulm{--band:#58141f;--bandink:#ffe7b8;--a:#ee9aa6;--a2:#d9a93c;--pap:#19140f;--pi:#f1e8d9;--pm:#b6a893;--pl:#3a2f26}}
+:root[data-theme="dark"] .t-ulm{--band:#58141f;--bandink:#ffe7b8;--a:#ee9aa6;--a2:#d9a93c;--pap:#19140f;--pi:#f1e8d9;--pm:#b6a893;--pl:#3a2f26}
+.t-usf{--band:#00583c;--bandink:#ffffff;--a:#00583c;--a2:#cfc493;--pap:#ffffff;--pi:#0e1d17;--pm:#566a61;--pl:#d4e0d9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t-usf{--band:#003f2b;--bandink:#ffffff;--a:#52d19f;--a2:#cfc493;--pap:#0b1511;--pi:#e6f2ec;--pm:#9db4aa;--pl:#20352c}}
+:root[data-theme="dark"] .t-usf{--band:#003f2b;--bandink:#ffffff;--a:#52d19f;--a2:#cfc493;--pap:#0b1511;--pi:#e6f2ec;--pm:#9db4aa;--pl:#20352c}
+.t-ksu{--band:#0a2a66;--bandink:#ffffff;--a:#0a2a66;--a2:#eaab00;--pap:#f7f8fa;--pi:#0d1626;--pm:#55627a;--pl:#d3d9e4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t-ksu{--band:#081d49;--bandink:#ffffff;--a:#8db3ff;--a2:#f2b61e;--pap:#0c1322;--pi:#e8edf8;--pm:#9aa7c0;--pl:#222c44}}
+:root[data-theme="dark"] .t-ksu{--band:#081d49;--bandink:#ffffff;--a:#8db3ff;--a2:#f2b61e;--pap:#0c1322;--pi:#e8edf8;--pm:#9aa7c0;--pl:#222c44}</style></head>
+<body>
+<header class="net"><div class="net-in"><p class="brand">CFB 27 Dynasty Network<small>2026 season. Updated Oct 13, 2026.</small></p><nav class="tabs" aria-label="Sections"><a href="#home" data-nav="home">Home</a><a href="#ulm" data-nav="ulm">The Bayou Report</a><a href="#usf" data-nav="usf">The Bulls Report</a><a href="#ksu" data-nav="ksu">The Dix Stadium Dispatch</a><a href="#league" data-nav="league">The Friends Game</a></nav></div></header>
+<div class="slate"><div class="slate-in"><span class="slate-h">Week 1</span><a class="game" data-k="ulm" href="#ulm"><b>UL Monroe at Charlotte</b><span>Jerry Richardson Stadium</span></a><a class="game" data-k="usf" href="#usf"><b>FIU at USF</b><span>Raymond James Stadium</span></a><a class="game" data-k="ksu" href="#ksu"><b>Kent State at South Carolina</b><span>Williams-Brice Stadium</span></a></div></div>
+<main>
+<section id="p-home" class="page" hidden><div class="pp">
+<h1 class="hh">Three programs. Three papers. One dynasty.</h1>
+<p class="lead">The 2026 season in College Football 27, as covered by the local press at each school. Pick a paper to read its stories, schedule, and players to watch.</p>
+<div class="fronts"><article class="front t-ulm"><div class="fh fh-ulm"><span class="fh-t">THE BAYOU REPORT</span></div><div class="fb"><p class="who"><strong>UL Monroe</strong>, 0-0. Charles Trenk.</p><h3><a href="#ulm/story-ulm-w0-preview">Meet Coach Trenk: A Pennsylvanian, a Plan, and the Guys Up Front</a></h3><p>MONROE, La. — The new head coach of the ULM Warhawks arrived in the Louisiana heat wearing a Pitt windbreaker, carrying a three-ring binder, and asking where a man could find a decent cheesesteak. Somebody...</p><a class="go" href="#ulm">Open The Bayou Report</a></div></article><article class="front t-usf"><div class="fh fh-usf"><span class="fh-t">The Bulls Report</span></div><div class="fb"><p class="who"><strong>USF</strong>, 0-0. Chris Truffa.</p><h3><a href="#usf/story-usf-w0-preview">New Era in Tampa: A Retired Army Recruiter, a Roster Full of Seniors, and a Week 2 Trip to West Point</a></h3><p>TAMPA, Fla. — It's 90 degrees at kickoff, the humidity is doing what it does, and the USF Bulls are among the favorites to win the American Athletic Conference.</p><a class="go" href="#usf">Open The Bulls Report</a></div></article><article class="front t-ksu"><div class="fh fh-ksu"><span class="fh-t">The Dix Stadium Dispatch</span></div><div class="fb"><p class="who"><strong>Kent State</strong>, 0-0. Rosco P-Coletrain.</p><h3><a href="#ksu/story-ksu-w0-preview">The Professor Comes to Kent: A PhD, a Gimmick Offense, and a Schedule That Doesn't Care</a></h3><p>KENT, Ohio — Let's get this out of the way. Kent State just hired a head coach with a doctorate in psychology who has never played a down of football and runs an offense that looks like a pop quiz. In the...</p><a class="go" href="#ksu">Open The Dix Stadium Dispatch</a></div></article></div>
+<a class="friends-band" href="#league"><strong>The Friends Game</strong><span>Week 7: Kent State at USF, best friends on opposite sidelines.</span></a>
+<section class="box wide"><h2>Latest stories</h2><ul class="latest"><li><a href="#ulm/story-ulm-w0-preview"><strong>Meet Coach Trenk: A Pennsylvanian, a Plan, and the Guys Up Front</strong></a><span>The Bayou Report. Season preview.</span></li><li><a href="#usf/story-usf-w0-preview"><strong>New Era in Tampa: A Retired Army Recruiter, a Roster Full of Seniors, and a Week 2 Trip to West Point</strong></a><span>The Bulls Report. Season preview.</span></li><li><a href="#ksu/story-ksu-w0-preview"><strong>The Professor Comes to Kent: A PhD, a Gimmick Offense, and a Schedule That Doesn't Care</strong></a><span>The Dix Stadium Dispatch. Season preview.</span></li></ul></section>
+</div></section>
+<section id="p-ulm" class="page t-ulm" hidden><header class="mast mast-ulm"><p class="mast-rule"></p><h1>THE BAYOU REPORT</h1><p class="mast-rule"></p><p class="mast-tag">Monroe, Louisiana. Dry humor with a Cajun accent.</p></header><div class="pp"><p class="rec"><strong>UL Monroe</strong> 0-0 overall, 0-0 in the Sun Belt</p><nav class="toc" aria-label="Stories in The Bayou Report"><ul><li><a href="#ulm/story-ulm-w0-preview">Season preview</a></li></ul></nav><div class="cols"><div class="main"><article class="story" id="story-ulm-w0-preview"><p class="kicker">Season preview</p><h2>Meet Coach Trenk: A Pennsylvanian, a Plan, and the Guys Up Front</h2><p class="byline">By the Bayou Report staff</p><div class="prose"><p>MONROE, La. — The new head coach of the ULM Warhawks arrived in the Louisiana heat wearing a Pitt windbreaker, carrying a three-ring binder, and asking where a man could find a decent cheesesteak. Somebody handed him a plate of boudin instead. He is still deciding how he feels about it.</p>
+<p>Charles Trenk, Coach Trenk to every player, trainer, and equipment manager in the building, inherits a program coming off a 3-9 season, with a conference mark of 1-7. He does not pretend otherwise. "We're not hiding from last year," he told the room at his first team meeting. "We're building on top of it. Possibly underneath it. We'll see."</p>
+<h3>A players' coach with a type
+Ask the players about Trenk and the answers come fast. He knows their names, their hometowns, and the names of their little brothers. He eats in the cafeteria. He is the kind of coach who will walk across a practice field to check on a freshman who looks lost.</h3>
+<p>Ask him about football, though, and you get a speech about the trenches, delivered by a man who played both lines in high school and never really came back from it. "Football is won by the people nobody takes pictures of," he says. The offensive line is the most important group on the field, in his opinion, and he'll say it again if you let him.</p>
+<p>His plan is to rebuild from the lines out, which sounds poetic until you read the roster. Most of the starting line is seniors, including tackle A.J. Vinson, guard Kaliem Croswell, and center Sean Dugery, and the defensive front has its own senior core. "Those guys get my best year," Trenk says, "and I get theirs." Whether that's a promise or a threat, he won't say.</p>
+<h3>The quarterback question
+Redshirt junior Aidan Armenta and sophomore Austin Carlisle spent camp trading reps and trading looks. The staff talks about "competition" and "we like both guys." The quarterback room has had the kind of tension that makes practices interesting and film sessions awkward. Whoever wins the job, the other is going to matter.</h3>
+<h3>Playmakers
+This is where the roster gets fun. Nic Trujillo and Parker Fulghum have been fighting over who's the top receiver since spring, and veteran Brandon Buckhaulter would like it noted that he's right here. The backfield is deep, with Derrick Jameson, Donald Chaney, and young Jaydon Wright. On defense, senior middle linebacker Noah Flemmings is the one every teammate points to, and kicker Max Larson is expected to get plenty of work.</h3>
+<h3>The road ahead
+The Warhawks open with back-to-back road games at Charlotte and UAB, then come home for an FCS opponent and Florida Atlantic before a trip to South Alabama. After a week off, the Sun Belt grind begins: Louisiana Tech at home, then Troy, Southern Miss, a trip to Arkansas State, and the Ragin' Cajuns at Malone Stadium. App State on the road and Marshall at home close the season. That's three rivalry games in five weeks, which is either a gift or a trap.</h3>
+<p>Most preseason picks have ULM near the bottom of the conference. Trenk says he hasn't read them, then quotes one.</p>
+<aside class="feat watch"><strong>Player to watch</strong><p>A.J. Vinson, RT. Ask Coach Trenk who his favorite player is and he'll say the whole roster. Ask who's second and watch where he looks.</p></aside>
+<aside class="feat quote"><strong>Quote of the week</strong><p>"I love every one of these guys. Some of them just don't get their names in the paper, so I say them extra." — Coach Trenk</p></aside>
+<p><em>Laissez les bons temps rouler, cher. Trenk would like them to roll through the A-gap.</em></p></div></article></div><aside class="rail"><section class="box"><h2>Coach Trenk</h2><p class="coach-name">Charles Trenk</p><p class="muted">West Newton, PA. Pitt.</p><p>A players' coach with a soft spot for linemen. Played both lines in high school and is rebuilding the program from the lines out.</p></section><section class="box"><h2>Players to watch</h2><ul class="watchl"><li><strong>Aidan Armenta</strong><span>QB, redshirt junior</span></li><li><strong>Austin Carlisle</strong><span>QB, sophomore</span></li><li><strong>Nic Trujillo</strong><span>WR, redshirt junior</span></li><li><strong>Parker Fulghum</strong><span>WR, redshirt sophomore</span></li><li><strong>Noah Flemmings</strong><span>Middle linebacker, senior</span></li><li><strong>A.J. Vinson</strong><span>RT, senior</span></li></ul></section><section class="box"><h2>Schedule and results</h2><div class="tw"><table class="sched"><thead><tr><th scope="col">Week</th><th scope="col">Game</th><th scope="col" class="r">Result</th></tr></thead><tbody><tr><td class="wk">1</td><td><span class="at">at</span> <strong>Charlotte</strong> <span class="ven">Jerry Richardson Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">2</td><td><span class="at">at</span> <strong>UAB</strong> <span class="ven">Protective Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">3</td><td><span class="at">vs</span> <strong>FCS Southwest</strong> <span class="ven">Malone Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">4</td><td><span class="at">vs</span> <strong>Florida Atlantic</strong> <span class="ven">Malone Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">5</td><td><span class="at">at</span> <strong>South Alabama</strong> <span class="tag soft">Conference</span><span class="ven">Hancock Whitney Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">7</td><td><span class="at">vs</span> <strong>Louisiana Tech</strong> <span class="tag">Rivalry</span><span class="tag soft">Conference</span><span class="ven">Malone Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">8</td><td><span class="at">at</span> <strong>Troy</strong> <span class="tag soft">Conference</span><span class="ven">Veterans Memorial Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">9</td><td><span class="at">vs</span> <strong>Southern Miss</strong> <span class="tag soft">Conference</span><span class="ven">Malone Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">10</td><td><span class="at">at</span> <strong>Arkansas State</strong> <span class="tag">Rivalry</span><span class="tag soft">Conference</span><span class="ven">Centennial Bank Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">11</td><td><span class="at">vs</span> <strong>Louisiana</strong> <span class="tag">Rivalry</span><span class="tag soft">Conference</span><span class="ven">Malone Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">12</td><td><span class="at">at</span> <strong>Appalachian State</strong> <span class="tag soft">Conference</span><span class="ven">Kidd Brewer Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">13</td><td><span class="at">vs</span> <strong>Marshall</strong> <span class="tag soft">Conference</span><span class="ven">Malone Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr></tbody></table></div></section></aside></div></div></section><section id="p-usf" class="page t-usf" hidden><header class="mast mast-usf"><div class="mast-in"><h1>The Bulls Report</h1><p class="lower"><span>USF</span>Tampa Bay sports desk. Working title.</p></div></header><div class="pp"><p class="rec"><strong>USF</strong> 0-0 overall, 0-0 in the American</p><nav class="toc" aria-label="Stories in The Bulls Report"><ul><li><a href="#usf/story-usf-w0-preview">Season preview</a></li></ul></nav><div class="cols"><div class="main"><article class="story" id="story-usf-w0-preview"><p class="kicker">Season preview<span class="draft">Draft</span></p><h2>New Era in Tampa: A Retired Army Recruiter, a Roster Full of Seniors, and a Week 2 Trip to West Point</h2><p class="byline">By the Bulls Report staff</p><div class="prose"><p>TAMPA, Fla. — It's 90 degrees at kickoff, the humidity is doing what it does, and the USF Bulls are among the favorites to win the American Athletic Conference.</p>
+<p>Leading them is a man who knows something about discomfort. Chris Truffa, a Vandergrift, Pennsylvania, native, retired from the Army this year after a career that ended with him in charge of recruiting. Weeks later he was running a Division I football program coming off a 9-4 season and a fifth-place finish in the American.</p>
+<p>Players describe him as a leader of men who runs a disciplined operation: early meetings, tight schedules, and a chain of command he expects everyone to respect. "He doesn't raise his voice," one player said. "He doesn't have to."</p>
+<p>He also spent years convincing young people to sign up for something hard. Recruiting in Florida, he says, feels like a day off. "Selling a kid on Tampa and the beach is easier than the job I did before," Truffa said.</p>
+<p>His newest signee has been tougher on the schedule. Truffa's infant son, Cooper, has the coach running on very little sleep. "Best signing I've made," he said. "Worst hours."</p>
+<h3>What he inherits
+It's a veteran roster. Right guard Cook and left guard Shrader anchor a seasoned offensive line, and the receiving room is five deep: Odom, Rodgers, Reuben, Seldon, and Branch. Junior quarterback Van Buren Jr. is the starter, with Kromenhoek pushing from behind.</h3>
+<p>The running back spot has drawn the most attention in practice. The depth chart lists sophomore Isaac ahead of senior Crowther, and Truffa's explanation was short. "Everybody earns it, every week."</p>
+<p>On defense, Hicks is the pass-rushing end, with Simmons Jr., Redwood, and Dillard inside. Bryan and Fortenberry anchor the corners, and Howard calls the defense from middle linebacker.</p>
+<h3>Week 2 is personal
+The first big test is a conference trip to Michie Stadium at West Point to face Army. Truffa spent his career in that uniform. Now he'll be on the opposite sideline.</h3>
+<p>"I owe everything to that uniform," he said. "And I'm still going to try to win."</p>
+<h3>Circle Week 7
+Kent State comes to Raymond James Stadium in Week 7, and the visiting sideline will have a familiar face on it: head coach Rosco P-Coletrain, Truffa's best friend since college.</h3>
+<p>Coletrain has a doctorate in psychology, has never played a down of football, and runs one of the most unconventional offenses in the Mid-American Conference. The two have been trading texts since the schedule came out.</p>
+<p>"He's my best friend," Truffa said. "For three hours on a Saturday, he's the enemy. Then we eat."</p>
+<p>Coletrain was less restrained. "I've spent years studying how people behave under pressure," he said. "Chris is about to be a very interesting case study."</p>
+<p>The stretch run is tough: Memphis at home, a trip to Florida Atlantic, and Tulane at home to close the regular season, all with the American title in play.</p>
+<aside class="feat watch"><strong>Player to watch</strong><p>Hicks, defensive end. Quarterbacks have been looking over their shoulders in practice.</p></aside>
+<aside class="feat quote"><strong>Quote of the week</strong><p>"Discipline is doing it when nobody's watching. Football is the Army with better weather." — Coach Truffa</p></aside></div></article></div><aside class="rail"><section class="box"><h2>Coach Truffa</h2><p class="coach-name">Chris Truffa</p><p class="muted">Vandergrift, PA.</p><p>Retired Army officer who ran recruiting before taking the job. A disciplined leader of men, and a new dad.</p></section><section class="box"><h2>Players to watch</h2><ul class="watchl"><li><strong>Van Buren Jr.</strong><span>QB, junior</span></li><li><strong>Kromenhoek</strong><span>QB, redshirt sophomore</span></li><li><strong>Cook</strong><span>RG, redshirt senior</span></li><li><strong>Odom</strong><span>WR, redshirt senior</span></li><li><strong>Hicks</strong><span>DE, redshirt senior</span></li><li><strong>Isaac</strong><span>RB, redshirt sophomore</span></li></ul></section><section class="box"><h2>Schedule and results</h2><div class="tw"><table class="sched"><thead><tr><th scope="col">Week</th><th scope="col">Game</th><th scope="col" class="r">Result</th></tr></thead><tbody><tr><td class="wk">1</td><td><span class="at">vs</span> <strong>FIU</strong> <span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">2</td><td><span class="at">at</span> <strong>Army</strong> <span class="tag soft">Conference</span><span class="ven">Michie Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">3</td><td><span class="at">vs</span> <strong>FCS Southeast</strong> <span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">4</td><td><span class="at">at</span> <strong>Bowling Green</strong> <span class="ven">Doyt L. Perry Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">5</td><td><span class="at">vs</span> <strong>Temple</strong> <span class="tag soft">Conference</span><span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">6</td><td><span class="at">at</span> <strong>UTSA</strong> <span class="tag soft">Conference</span><span class="ven">Alamodome</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">7</td><td><span class="at">vs</span> <strong>Kent State</strong> <span class="tag friends">The Friends Game</span><span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">9</td><td><span class="at">vs</span> <strong>UAB</strong> <span class="tag soft">Conference</span><span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">10</td><td><span class="at">at</span> <strong>East Carolina</strong> <span class="tag soft">Conference</span><span class="ven">Dowdy-Ficklen Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">11</td><td><span class="at">vs</span> <strong>Memphis</strong> <span class="tag soft">Conference</span><span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">12</td><td><span class="at">at</span> <strong>Florida Atlantic</strong> <span class="tag soft">Conference</span><span class="ven">Flagler Credit Union Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">13</td><td><span class="at">vs</span> <strong>Tulane</strong> <span class="tag soft">Conference</span><span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr></tbody></table></div></section></aside></div></div></section><section id="p-ksu" class="page t-ksu" hidden><header class="mast mast-ksu"><div class="mast-in"><h1>The Dix Stadium Dispatch</h1><p class="mast-tag">Kent, Ohio. MAC football, no frills. Working title.</p></div></header><div class="pp"><p class="rec"><strong>Kent State</strong> 0-0 overall, 0-0 in the MAC</p><nav class="toc" aria-label="Stories in The Dix Stadium Dispatch"><ul><li><a href="#ksu/story-ksu-w0-preview">Season preview</a></li></ul></nav><div class="cols"><div class="main"><article class="story" id="story-ksu-w0-preview"><p class="kicker">Season preview<span class="draft">Draft</span></p><h2>The Professor Comes to Kent: A PhD, a Gimmick Offense, and a Schedule That Doesn't Care</h2><p class="byline">By the Dix Stadium Dispatch staff</p><div class="prose"><p>KENT, Ohio — Let's get this out of the way. Kent State just hired a head coach with a doctorate in psychology who has never played a down of football and runs an offense that looks like a pop quiz. In the Mid-American Conference. The league of three yards and a cloud of dust, and Tuesday nights in November when your fingers go numb.</p>
+<p>I was skeptical. So were the people in the press box at Dix Stadium.</p>
+<p>His name is Rosco P-Coletrain. He's from West Newton, Pennsylvania, he went to Middle Tennessee State, and the people who know offense say he's one of the sharpest young minds in the game. The people who know the MAC say they say that about everybody.</p>
+<p>Then you sit through a practice.</p>
+<h3>The offense
+It is, to be fair, creative. Gimmicky is the word you'll hear from the traditionalists. One package he calls "Cognitive Dissonance" is a run that looks like a pass and a pass that looks like a run. The quarterbacks say it's the best thing they do. The linemen say it's the hardest thing to explain.</h3>
+<p>Coletrain is full of passion, and a little cocky, and he says so himself. He needed a program that would let him install all of it. Kent State needed a coach. Both sides are calling it a fit.</p>
+<p>His wife, Julia, is a regular at Dix Stadium. So is Wallace, the family dog, who has been spotted at practice, mostly supervising.</p>
+<h3>What he inherits
+A team that went 5-7 last year and finished seventh in the MAC. Junior quarterback DeShields leads a room with two younger quarterbacks behind him, Ruffin and Thanthanavong, which means options, and options are the entire point.</h3>
+<p>Sophomore receiver Harris is the headliner, with senior Clark, Banks, and Etheridge for company. The backfield is crowded: King, Caffey, Delaney Jr., and another Harris. At tight end, Mulder leads the way.</p>
+<p>Up front, the line is young but not green: senior Morell at guard, senior Adewole at tackle, and sophomores Meadows and Dunn on the left side and at right guard. On defense, Aden anchors the tackles, Nicholl runs the middle, and Muhammad is the veteran in the secondary. Both the kicker, Leonard, and the punter, Stoeckel, are freshmen.</p>
+<h3>The road
+The schedule doesn't care about his PhD. The Flashes open at South Carolina. Week 3 is a trip to Columbus to face No. 1 Ohio State. Then the MAC grind: Ball State and Ohio at home, at Western Michigan, Akron at Dix in a rivalry game, a trip to Sacramento State, at Bowling Green, Miami (Ohio) at home, and a closer at Eastern Michigan. Two open weeks. The conference title game, if they get there, is at Ford Field.</h3>
+<h3>Week 7
+Circle it. Kent State goes to Tampa to face USF, and the other sideline belongs to Chris Truffa, Coletrain's best friend since college.</h3>
+<p>"I've spent years studying how people behave under pressure," Coletrain said. "Chris is about to be a very interesting case study."</p>
+<p>I'm still skeptical. But I've covered this league long enough to know the weirdest thing you can do in the MAC is win with something nobody's seen.</p>
+<aside class="feat watch"><strong>Player to watch</strong><p>Harris, WR. The headliner of the experiment.</p></aside>
+<aside class="feat quote"><strong>Quote of the week</strong><p>"I never played the game. Maybe that's why nobody told me what's not allowed." — Coach Coletrain</p></aside></div></article></div><aside class="rail"><section class="box"><h2>Coach Coletrain</h2><p class="coach-name">Rosco P-Coletrain</p><p class="muted">West Newton, PA. Middle Tennessee State.</p><p>Psychology PhD who never played football. Runs a creative offense that traditionalists call gimmicky. Full of passion, and a little cocky.</p></section><section class="box"><h2>Players to watch</h2><ul class="watchl"><li><strong>DeShields</strong><span>QB, redshirt junior</span></li><li><strong>Harris</strong><span>WR, redshirt sophomore</span></li><li><strong>Clark</strong><span>WR, senior</span></li><li><strong>Morell</strong><span>LG, redshirt senior</span></li><li><strong>Aden</strong><span>DT, redshirt senior</span></li><li><strong>Nicholl</strong><span>Middle linebacker, redshirt senior</span></li></ul></section><section class="box"><h2>Schedule and results</h2><div class="tw"><table class="sched"><thead><tr><th scope="col">Week</th><th scope="col">Game</th><th scope="col" class="r">Result</th></tr></thead><tbody><tr><td class="wk">1</td><td><span class="at">at</span> <strong>South Carolina</strong> <span class="ven">Williams-Brice Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">2</td><td><span class="at">vs</span> <strong>FCS Midwest</strong> <span class="ven">Dix Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">3</td><td><span class="at">at</span> <span class="rk">No. 1</span> <strong>Ohio State</strong> <span class="ven">Ohio Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">4</td><td><span class="at">vs</span> <strong>Ball State</strong> <span class="tag soft">Conference</span><span class="ven">Dix Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">5</td><td><span class="at">vs</span> <strong>Ohio</strong> <span class="tag soft">Conference</span><span class="ven">Dix Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">6</td><td><span class="at">at</span> <strong>Western Michigan</strong> <span class="tag soft">Conference</span><span class="ven">Waldo Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">7</td><td><span class="at">at</span> <strong>USF</strong> <span class="tag friends">The Friends Game</span><span class="ven">Raymond James Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">8</td><td><span class="at">vs</span> <strong>Akron</strong> <span class="tag">Rivalry</span><span class="tag soft">Conference</span><span class="ven">Dix Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">9</td><td><span class="at">at</span> <strong>Sacramento State</strong> <span class="tag soft">Conference</span><span class="ven">Sacramento State Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">11</td><td><span class="at">at</span> <strong>Bowling Green</strong> <span class="tag">Rivalry</span><span class="tag soft">Conference</span><span class="ven">Doyt L. Perry Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">12</td><td><span class="at">vs</span> <strong>Miami University</strong> <span class="tag soft">Conference</span><span class="ven">Dix Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr><tr><td class="wk">13</td><td><span class="at">at</span> <strong>Eastern Michigan</strong> <span class="tag soft">Conference</span><span class="ven">Rynearson Stadium</span></td><td class="r"><span class="res none">Upcoming</span></td></tr></tbody></table></div></section></aside></div></div></section>
+<section id="p-league" class="page league" hidden><div class="pp">
+<h1 class="lh">The Friends Game</h1>
+<p class="lead">Week 7. Kent State visits USF at Raymond James Stadium, and the two head coaches have been best friends since college.</p>
+<div class="vs"><div class="side t-usf"><h2>Chris Truffa</h2><p class="muted">USF, hosting</p><p>Retired Army officer who ran recruiting before taking the job. A disciplined leader of men, and a new dad.</p>
+<blockquote>"He's my best friend. For three hours on a Saturday, he's the enemy. Then we eat."</blockquote></div>
+<div class="side t-ksu"><h2>Rosco P-Coletrain</h2><p class="muted">Kent State, visiting</p><p>Psychology PhD who never played football. Runs a creative offense that traditionalists call gimmicky. Full of passion, and a little cocky.</p>
+<blockquote>"I've spent years studying how people behave under pressure. Chris is about to be a very interesting case study."</blockquote></div></div>
+<section class="box wide"><h2>Three friends, three programs</h2>
+<p>Charles Trenk and Rosco P-Coletrain have known each other since kindergarten in West Newton, Pennsylvania. Rosco P-Coletrain and Chris Truffa have been best friends since college. Each coach now runs a very different program, and each has his own newspaper.</p></section>
+<section class="box wide"><h2>Where the schedules cross</h2><ul class='cross'><li><strong>UL Monroe and USF:</strong> both play Florida Atlantic, UAB.</li><li><strong>USF and Kent State:</strong> they play each other; both play Bowling Green.</li><li><strong>UL Monroe and Kent State:</strong> no common opponents.</li></ul></section>
+<section class="box wide"><h2>The weekly league column</h2><p>One column covering all three teams runs here once Week 1 is played.</p></section>
+</div></section>
+</main>
+<footer>Fan-made fiction set in College Football 27. Rosters come from the game; the stories, quotes, and personalities are invented.</footer>
+<script>
+(function(){
+ var pages=['home','ulm','usf','ksu','league'];
+ function route(){
+  var parts=(location.hash||'#home').slice(1).split('/'); var h=parts[0];
+  if(pages.indexOf(h)<0) h='home';
+  pages.forEach(function(p){var el=document.getElementById('p-'+p); if(el) el.hidden=(p!==h);});
+  var links=document.querySelectorAll('[data-nav]');
+  for(var i=0;i<links.length;i++){links[i].setAttribute('aria-current',links[i].getAttribute('data-nav')===h?'page':'false');}
+  var target=parts[1]?document.getElementById(parts[1]):null;
+  if(target){target.scrollIntoView();} else {window.scrollTo(0,0);}
+ }
+ window.addEventListener('hashchange',route); route();
+})();
+</script>
+</body></html>
